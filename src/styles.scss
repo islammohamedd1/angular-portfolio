@@ -14,8 +14,8 @@ $black: (
 
 $white: (
   900: #c7c7c7,
-  800: #fafafa,
-  700: #ffffff,
+  800: #ffffff,
+  700: #fafafa,
   contrast: (
     900: $dark-primary-text,
     800: $dark-primary-text,
@@ -79,6 +79,11 @@ body { margin: 0; font-family: 'Rubik', sans-serif; }
     border-bottom: 5px solid mat-color($light-app-accent)
 }
 
+.primary-background {
+    background-color: mat-color($light-app-primary, lighter);
+    color: mat-color($light-app-primary, lighter-contrast);
+}
+
 section {
     color: mat-color($light-app-primary, lighter-contrast);
     padding: 40px;
@@ -88,14 +93,19 @@ section {
     .subtitle {
         font-size: 2em;
     }
+
+    .section-header {
+        font-size: 2em;
+        margin-bottom: 38px;
+    }
 }
 
 section:nth-of-type(odd) {
-    background-color: mat-color($light-app-primary, lighter);
+    background-color: mat-color($light-app-primary);
 }
 
 section:nth-of-type(even) {
-    background-color: mat-color($light-app-primary);
+    background-color: mat-color($light-app-primary, lighter);
 }
 
 @media(min-width: 700px) {
@@ -127,6 +137,15 @@ section:nth-of-type(even) {
     }
 
     .primary-border, .hover-border:hover {
-        border-bottom: 5px solid mat-color($light-app-accent, lighter)
+        border-bottom: 5px solid mat-color($dark-app-accent, lighter)
+    }
+
+    .primary-background {
+        background-color: mat-color($dark-app-primary, lighter);
+        color: mat-color($dark-app-primary, lighter-contrast);
+    }
+
+    a {
+        color: mat-color($dark-app-accent, lighter)
     }
 }

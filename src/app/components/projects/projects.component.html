@@ -1,0 +1,26 @@
+<div class="section-header">
+    <h2>Projects</h2>
+</div>
+<div class="section-content">
+    <mat-card *ngFor="let project of projects" class="project-card primary-background">
+        <mat-card-header>
+            <mat-card-title>{{ project.title }}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="{{ project.imagePath }}" alt="{{ project.title }}">
+        <mat-card-content>
+            <div class="description">
+                <p>
+                    {{ project.overview }}
+                </p>
+            </div>
+            <div class="technologies">
+                <p>
+                    {{project.technelogies.join(' - ')}}
+                </p>
+                <div class="link">
+                    <a href="{{ project.link }}" target="_blank">Github</a>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

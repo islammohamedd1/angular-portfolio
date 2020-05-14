@@ -1,0 +1,23 @@
+.section-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: 32px;
+    justify-items: center;
+    justify-content: center;
+
+    .project-card {
+        mat-card-title {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .description {
+            font-size: 1.5em;
+        }
+        
+        .technologies {
+            color: #888888;
+            font-size: 1.5em;
+        }
+    }
+}
