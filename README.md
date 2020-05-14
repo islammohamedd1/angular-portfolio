@@ -12,4 +12,4 @@ Run `npm run dev:ssr` to run locally. The app will run in localhost:4200
 
 ## Build
 
-To build the project for production, first run `ng build --prod`. Then run `` to build the server.
+To build the project for production, first run `ng build --prod`. Then run `ng run angular-portfolio:server` to build the server.
