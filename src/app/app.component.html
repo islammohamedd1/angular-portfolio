@@ -1,12 +1,4 @@
 <div [class.dark]="theme === 'dark'">
     <app-navbar></app-navbar>
-    <section id="overview">
-        <app-overview></app-overview>
-    </section>
-    <section id="projects">
-        <app-projects></app-projects>
-    </section>
-    <section id="contact">
-        <app-contact></app-contact>
-    </section>
+    <router-outlet></router-outlet>
 </div>

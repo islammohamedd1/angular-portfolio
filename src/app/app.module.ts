@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { OverviewComponent } from './components/overview/overview.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ProjectDetailsComponent } from './components/project-details/project-details.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ContactComponent } from './components/contact/contact.component';
     NavbarComponent,
     OverviewComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    ProjectDetailsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,7 @@ import { ContactComponent } from './components/contact/contact.component';
     HttpClientModule,
     MatCardModule
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

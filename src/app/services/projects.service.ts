@@ -16,6 +16,6 @@ export class ProjectsService {
   }
 
   getProject(id: number): Project {
-    return this.projects.find(p => p.id ==- id);
+    return this.projects.find(p => p.id === id);
   }
 }

@@ -6,7 +6,9 @@
         <mat-card-header>
             <mat-card-title>{{ project.title }}</mat-card-title>
         </mat-card-header>
-        <img mat-card-image src="{{ project.imagePath }}" alt="{{ project.title }}">
+        <a routerLink="project/{{project.id}}">
+            <img mat-card-image src="{{ project.imagePath }}" alt="{{ project.title }}">
+        </a>
         <mat-card-content>
             <div class="description">
                 <p>
