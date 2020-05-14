@@ -11,13 +11,15 @@ import {MatIconModule} from "@angular/material/icon";
 import { HttpClientModule } from '@angular/common/http';
 import { OverviewComponent } from './components/overview/overview.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     OverviewComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

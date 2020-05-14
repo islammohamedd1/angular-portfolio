@@ -1,0 +1,24 @@
+.section-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 32px;
+
+    .subheader {
+        font-size: 2em;
+        margin-bottom: 60px;
+    }
+
+    .icons-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 32px;
+
+        i {
+            font-size: 3.5em;
+        }
+    }
+
+    .email-link {
+        font-size: 1.5em;
+    }
+}

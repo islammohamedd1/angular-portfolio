@@ -66,12 +66,16 @@ $dark-app-theme: mat-light-theme($dark-app-primary, $dark-app-accent);
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Rubik', sans-serif; }
 
+* {
+    transition: all 0.3s ease-in-out;
+}
+
 .hover-border, .primary-border {
     border-bottom: 5px solid transparent;
     padding-bottom: 8px
 }
 
-.primary-text-color {
+.primary-text-color, .primary-text-hover:hover {
     color: mat-color($light-app-accent);
 }
 
@@ -81,6 +85,10 @@ body { margin: 0; font-family: 'Rubik', sans-serif; }
 
 .primary-background {
     background-color: mat-color($light-app-primary, lighter);
+    color: mat-color($light-app-primary, lighter-contrast);
+}
+
+.default-text-color {
     color: mat-color($light-app-primary, lighter-contrast);
 }
 
@@ -132,7 +140,7 @@ section:nth-of-type(even) {
         color: mat-color($dark-app-primary, lighter-contrast)
     }
 
-    .primary-text-color {
+    .primary-text-color, .primary-text-hover:hover {
         color: mat-color($dark-app-accent);
     }
 
@@ -147,5 +155,9 @@ section:nth-of-type(even) {
 
     a {
         color: mat-color($dark-app-accent, lighter)
+    }
+
+    .default-text-color {
+        color: mat-color($dark-app-primary, lighter-contrast);
     }
 }
