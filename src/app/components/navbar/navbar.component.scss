@@ -1,5 +1,16 @@
+mat-toolbar {
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+
 .spacer {
     flex: 1 1 auto;
+}
+
+@media(max-width: 700px) {
+    .links {
+        display: none;
+    }
 }
 
 .links {
@@ -21,4 +32,9 @@
     outline: none;
     cursor: pointer;
     padding: 40px 20px;
+}
+
+.brand h2 {
+    font-size: 2em;
+    font-weight: bold;
 }

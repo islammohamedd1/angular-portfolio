@@ -9,7 +9,7 @@ export class ThemeService {
   currentTheme: BehaviorSubject<string>;
 
   constructor() {
-    this.currentTheme = new BehaviorSubject<string>('light');
+    this.currentTheme = new BehaviorSubject<string>('dark');
   }
 
   toggleTheme(): void {
