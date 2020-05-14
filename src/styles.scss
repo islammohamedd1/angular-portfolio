@@ -75,6 +75,10 @@ body { margin: 0; font-family: 'Rubik', sans-serif; }
     padding-bottom: 8px
 }
 
+.undecorated-link {
+    text-decoration: none;
+}
+
 .primary-text-color, .primary-text-hover:hover {
     color: mat-color($light-app-accent);
 }
@@ -88,7 +92,7 @@ body { margin: 0; font-family: 'Rubik', sans-serif; }
     color: mat-color($light-app-primary, lighter-contrast);
 }
 
-.default-text-color {
+.default-text-color, .undecorated-link {
     color: mat-color($light-app-primary, lighter-contrast);
 }
 
@@ -157,7 +161,7 @@ section:nth-of-type(even) {
         color: mat-color($dark-app-accent, lighter)
     }
 
-    .default-text-color {
+    .default-text-color, .undecorated-link {
         color: mat-color($dark-app-primary, lighter-contrast);
     }
 }
