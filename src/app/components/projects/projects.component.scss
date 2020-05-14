@@ -1,7 +1,8 @@
 .section-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-    gap: 32px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    column-gap: 40px;
+    row-gap: 100px;
     justify-items: center;
     justify-content: center;
 
@@ -18,6 +19,11 @@
         .technologies {
             color: #888888;
             font-size: 1.5em;
+        }
+
+        img {
+            // width:50%;
+            max-width: 100%;
         }
     }
 }
