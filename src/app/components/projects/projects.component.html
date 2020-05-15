@@ -3,18 +3,13 @@
 </div>
 <div class="section-content">
     <mat-card *ngFor="let project of projects" class="project-card primary-background">
-        <mat-card-header>
-            <mat-card-title>{{ project.title }}</mat-card-title>
-        </mat-card-header>
         <a routerLink="project/{{project.id}}">
             <img mat-card-image src="{{ project.imagePath }}" alt="{{ project.title }}">
         </a>
+        <mat-card-header>
+            <mat-card-title>{{ project.title }}</mat-card-title>
+        </mat-card-header>
         <mat-card-content>
-            <div class="description">
-                <p>
-                    {{ project.overview }}
-                </p>
-            </div>
             <div class="technologies">
                 <p>
                     {{project.technelogies.join(' - ')}}
